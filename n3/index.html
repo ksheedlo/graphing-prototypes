@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>angular + n3 demo</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div ng-controller="TimeSeriesCtrl">
+            <h2>Time Series</h2>
+            <div class="Linechart">
+              <linechart options="options" data="data"></linechart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/bower_components/d3/d3.min.js"></script>
+    <script src="/bower_components/moment/min/moment.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/n3-line-chart/dist/line-chart.min.js"></script>
+    <script src="/bower_components/underscore/underscore-min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

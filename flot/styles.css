@@ -1,0 +1,12 @@
+.TimeSeries {
+  width: 100%;
+  height: 200px;
+}
+
+.TimeSeries-tooltip {
+  border: 2px solid #1e6dc0;
+  border-radius: 3px;
+  padding: 3px;
+  background-color: #e8e8e8;
+  color: #1e6dc0;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "flot-time-series-demo",
+  "version": "0.0.0",
+  "authors": [
+    "Ken Sheedlo <ken.sheedlo@rackspace.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.8",
+    "bootstrap": "~3.3.1",
+    "flot": "~0.8.3",
+    "moment": "~2.8.4"
+  }
+}

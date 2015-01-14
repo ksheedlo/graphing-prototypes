@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MetricsGraphics.js demo</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/metrics-graphics/dist/metricsgraphics.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div ng-controller="TimeSeriesCtrl">
+            <h2>Time Series</h2>
+            <ks-time-series data="ts"></ks-time-series>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/bower_components/d3/d3.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/momentjs/min/moment.min.js"></script>
+    <script src="/bower_components/underscore/underscore-min.js"></script>
+    <script src="/bower_components/metrics-graphics/dist/metricsgraphics.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

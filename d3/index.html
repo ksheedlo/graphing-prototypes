@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>angular + d3.js demo</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div ng-controller="BarChartCtrl">
+            <h2>Bar Chart</h2>
+            <ks-bar-chart data="chart"></ks-bar-chart>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Values</label>
+                <div class="col-sm-9">
+                  <input class="form-control" ng-model="chartStr" ng-list>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">JSON</label>
+                <div class="col-sm-9">
+                  {{chart | json}}
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">String model</label>
+                <div class="col-sm-9">
+                  {{chartStr | json}}
+                </div>
+              </div>
+            </form>
+          </div>
+          <div ng-controller="TimeSeriesCtrl">
+            <h2>Time Series</h2>
+            <ks-time-series data="ts"></ks-time-series>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/bower_components/d3/d3.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
